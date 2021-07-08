@@ -5,7 +5,7 @@
 /* here I will set my variable csss*/
 :root {
   --header-height: 3rem;
-  --hue-color: 142;
+  --hue-color: 360;
 
   /*HSL color mode*/
 
@@ -274,7 +274,7 @@ header {
 }
 
 .home_scroll-button:hover{
-  transform: translateY(2.5rem);
+  transform: translateY(1.1rem);
 }
 
 .home_scroll-mouse{
@@ -290,4 +290,64 @@ header {
 
 .home_scroll-arrow{
   font-size: 1.25rem;
+}
+
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button_icon{
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: .3s;
+}
+
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+}
+
+.about_img{
+  width: 200px;
+  border-radius: .5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about_description{
+  text-align: center;
+  margin-bottom: var(--mb-0-5);
+}
+
+.about_info{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: var(--mb-2-5);
+}
+.about_info-title{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
+.about_info-name{
+  font-size: var(--small-font-size);
+}
+.about_info-title,
+.about_info-name{
+  display: block;
+  text-align: center;
+}
+
+.about_buttons{
+  display: flex;
+  justify-content: center;
 }
